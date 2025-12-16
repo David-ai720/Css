@@ -1,0 +1,112 @@
+body {
+  background-color: #a1b9ad;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Perfumes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: stretch; 
+  padding: 80px 20px 40px; 
+}
+
+.Perfume {
+  display: flex;
+  width: 700px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+  background: white;
+  align-items: stretch; 
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.Imagen {
+  background: white;
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.Imagen img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.Recuadro {
+  background: #F7EDEC;
+  flex: 1 1 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  gap: 20px;
+}
+
+.Titulo {
+  color: #C54255;
+  font-weight: bold;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.Texto {
+  color: #C54255;
+  font-size: 1rem;
+  margin: 0;
+  flex-grow: 1; 
+}
+
+.Precio {
+  color: #d4aa21;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 10px 0 0 0;
+  text-align: center;
+}
+
+.Boton {
+  margin-top: 20px;
+  padding: 15px 40px;
+  background-color: #d4aa21;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: center; 
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 960px) {
+  .Productos {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .Perfume {
+    width: 100%; 
+    flex-direction: column; 
+  }
+
+  .Imagen, .Recuadro {
+    flex: none;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .Precio, .Boton {
+    text-align: center;
+    align-self: center;
+  }
+
+  .Boton {
+    width: 50%;
+  }
+}
